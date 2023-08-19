@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Onunkwor Raphael Portfolio</title>
+    <!-- Font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- JS links -->
+    <script src="project-slideshow.js" defer></script>
+    <script src="animation.js" defer></script>
+    <script src="color-mode.js" defer></script>
+    <!-- Css links -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="color-mode.css" />
+  </head>
+  <body>
+    <div id="hero">
+      <h5>hello I'm</h5>
+      <h1>Onunkwor Raphael</h1>
+      <p>Front-end Developer || Technical Writer</p>
+      <!-- Block,Element,Modifier -->
+      <div id="hero__animation">
+        <div id="hero__animation__img"></div>
+      </div>
+    </div>
+
+    <!-- Experience and skill -->
+    <nav id="grid">
+      <!-- Top-left -->
+      <div id="grid__tl">
+        <div id="grid__tl__btn">
+          About
+        </div>
+        <div id="grid__tl__content">
+          <div class="cards">
+            <!-- single card -->
+            <div class="cards__content">
+              <article>
+                <img src="experience.png" alt="Experience icon" class="icon" />
+                <h2>Experience</h2>
+                <p>
+                  7 Months + <br />
+                  Developer <br />
+                  Experience
+                </p>
+              </article>
+              <p class="cards__content__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa,
+                eos.
+              </p>
+            </div>
+            <!-- end of single card -->
+            <!-- single card -->
+            <div class="cards__content">
+              <article>
+                <img src="education.png" alt="Education icon" class="icon" />
+                <h2>Education</h2>
+                <p>Biotechnology Undergrad</p>
+              </article>
+              <p class="cards__content__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium, consequuntur!
+              </p>
+            </div>
+            <!-- end of single card -->
+          </div>
+        </div>
+      </div>
+      <!-- End of top left -->
+
+      <!-- Top Right -->
+      <div id="grid__tr">
+        <div id="grid__tr__btn">
+          Experience
+        </div>
+        <div id="grid__tr__content">
+          <div class="cards experience">
+            <!-- single card -->
+
+            <article class="experience__skill">
+              <h2>Frontend Development</h2>
+              <div>
+                <img src="checkmark.png" alt="checkmark icon" class="icon" />
+                <div>
+                  <h2>HTML</h2>
+                  <p>FCC Certified</p>
+                </div>
+              </div>
+
+              <div>
+                <img src="checkmark.png" alt="checkmark icon" class="icon" />
+                <div>
+                  <h2>CSS</h2>
+                  <p>FCC Certified</p>
+                </div>
+              </div>
+
+              <div>
+                <img src="checkmark.png" alt="checkmark icon" class="icon" />
+                <div>
+                  <h2>JavaScript</h2>
+                  <p>FCC Certified</p>
+                </div>
+              </div>
+                <div>
+                    <img src="checkmark.png" alt="checkmark icon" class="icon" />
+                    <div>
+                      <h2>React</h2>
+                      <p>Null</p>
+                    </div>
+              </div>
+
+            </article>
+
+            <article class="experience__skill">
+                <h2>Backend Development</h2>
+                <div>
+                  <img src="checkmark.png" alt="checkmark icon" class="icon" />
+                  <div>
+                    <h2>FireBase</h2>
+                    <p>Basics</p>
+                  </div>
+                </div>
+  
+                <div>
+                  <img src="checkmark.png" alt="checkmark icon" class="icon" />
+                  <div>
+                    <h2>Node Js</h2>
+                    <p>Null</p>
+                  </div>
+                </div>
+  
+                <div>
+                  <img src="checkmark.png" alt="checkmark icon" class="icon" />
+                  <div>
+                    <h2>Express JS</h2>
+                    <p>Null</p>
+                  </div>
+                </div>
+                  <div>
+                      <img src="checkmark.png" alt="checkmark icon" class="icon" />
+                      <div>
+                        <h2>Git</h2>
+                        <p>Basics</p>
+                      </div>
+                </div>
+              </article>
+
+            <!-- end of single card -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Top Right -->
+
+       <!-- Bottom left -->
+       <div id="grid__bl">
+        <div id="grid__bl__btn">Projects</div>
+        <div id="grid__bl__content">
+          <div id="grid__bl__content__projects">
+
+            <!-- project 1 -->
+            <div class="projects p-1">
+              <img src="project-1.jpg" alt="project 1" class="project__img project-1">
+              <h2 class="project__title">Project One</h2>
+              <button class="btn" onclick="window.location.href=`https://onunkwor.github.io/menu/`">Demo</button>
+
+              <button class="btn" onclick="window.location.href=`https://github.com/Onunkwor`">GitHub</button>
+            </div>
+
+            <!-- Project 2 -->
+
+            <div class="projects p-2">
+                <img src="project-2.png" alt="project 2" class="project__img project-2">
+                <h2 class="project__title">Project Two</h2>
+                <button class="btn" onclick="window.location.href=`https://github.com/Onunkwor`">Demo</button>
+  
+                <button class="btn" onclick="window.location.href=`https://github.com/Onunkwor`">GitHub</button>
+              </div>
+
+              <!-- Project 3 -->
+
+              <div class="projects p-3">
+                  <img src="project-3.png" alt="project 3" class="project__img project-3">
+                  <h2 class="project__title">Project Three</h2>
+                  <button class="btn" onclick="window.location.href=`https://github.com/Onunkwor`">Demo</button>
+    
+                  <button class="btn" onclick="window.location.href=`https://github.com/Onunkwor`">GitHub</button>
+                </div>
+            <button class="arrow" onclick="navigateProject(-1)">&#10094;</button>
+              <button class="arrow" onclick="navigateProject(1)">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    <!-- End of bottom left -->
+
+   <!-- Bottom right  -->
+
+    <div id="grid__br">
+      <div id="grid__br__btn">
+        Contact
+      </div>
+      <div id="grid__br__content">
+        <h5 class="contact-text">Get In Touch</h5>
+        <h2 class="contact-text">Contact Me</h2>
+        <div>
+          <button class="btn btn-contact" onclick="window.location.href=`mailto:raphael.onun@gmail.com`">Email</button>
+          <button class="btn btn-contact" onclick="window.location.href=`https://www.linkedin.com/in/ronunkwor/`">LinkedIn</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of bottom right -->
+    </nav>
+    <!-- Grid end -->
+
+   
+    <div id="color-mode">
+      <div id="toggle-btn" class="icon"></div>
+    </div>
+  </body>
+</html>

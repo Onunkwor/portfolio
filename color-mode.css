@@ -1,0 +1,104 @@
+/* light mode */
+:root {
+  --bg: #fff;
+  --bg-alt: #222;
+  --bg-alt-2: #f0f0f0;
+  --bg-transparent: #ffffffe8;
+  --border: 0.01rem solid #333;
+  --text: #333;
+  --text-alt: #fff;
+  /* Face animation */
+  --tl-1: url(t1-1.png);
+  --tl-2: url(tl-2.png);
+  --tl-3: url(tl-3.png);
+  --tl-4: url(tl-4.png);
+  --tl-5: url(tl-5.png);
+
+  --tr-1: url(tr-1.png);
+  --tr-2: url(tr-2.png);
+  --tr-3: url(tr-3.png);
+  --tr-4: url(tr-4.png);
+  --tr-5: url(tr-5.png);
+
+  --bl-1: url(bl-1.png);
+  --bl-2: url(bl-2.png);
+  --bl-3: url(bl-3.png);
+  --bl-4: url(bl-4.png);
+  --bl-5: url(bl-5.png);
+
+  --br-1: url(br-1.png);
+  --br-2: url(br-2.png);
+  --br-3: url(br-3.png);
+  --br-4: url(br-4.png);
+  --br-5: url(br-5.png);
+
+  --sun: url(sun.png);
+}
+
+/* Dark mode */
+:root.dark-mode {
+  /* --bg: #21202124; */
+  --bg: #222;
+  --bg-alt: #3c3d40;
+  --bg-alt-2: #555;
+  --bg-transparent: #333333f5;
+  --border: 0.01rem solid #5a5a5a;
+  --text: #fff;
+
+  /* Face animation */
+  --tl-1: url(tlw-1.png);
+  --tl-2: url(tlw-2.png);
+  --tl-3: url(tlw-3.png);
+  --tl-4: url(tlw-4.png);
+  --tl-5: url(tlw-5.png);
+
+  --tr-1: url(trw-1.png);
+  --tr-2: url(trw-2.png);
+  --tr-3: url(trw-3.png);
+  --tr-4: url(trw-4.png);
+  --tr-5: url(trw-5.png);
+
+  --bl-1: url(blw-1.png);
+  --bl-2: url(blw-2.png);
+  --bl-3: url(blw-3.png);
+  --bl-4: url(blw-4.png);
+  --bl-5: url(blw-5.png);
+
+  --br-1: url(brw-1.png);
+  --br-2: url(brw-2.png);
+  --br-3: url(brw-3.png);
+  --br-4: url(brw-4.png);
+  --br-5: url(brw-5.png);
+
+  --moon: url(moon.png);
+}
+
+/* COLOR MODE TOGGLE BUTTON */
+
+#color-mode {
+  background: var(--bg-alt-2);
+  height: 2.75rem;
+  width: 4rem;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+#toggle-btn {
+  background-image: var(--sun);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.dark-mode #toggle-btn {
+  background-image: var(--moon);
+}
+.dark-mode #color-mode {
+  justify-content: flex-end;
+}
