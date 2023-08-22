@@ -178,6 +178,11 @@ article h2 {
   margin: 0 1rem;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .cards__content__text {
+    font-size: 0.85rem;
+  }
+}
 /* Top Right Corner */
 
 #grid__tr__btn {
@@ -246,6 +251,7 @@ article h2 {
   transform: translateX(-100vw) translateY(100vh);
 }
 .projects {
+  display: flex;
   width: 100%;
   flex-wrap: wrap;
   border-radius: 2rem;
@@ -253,7 +259,6 @@ article h2 {
   margin: auto auto 0.5rem;
   background: var(--bg-alt);
   border: var(--border);
-  display: flex;
 }
 .project__img {
   width: 100%;
